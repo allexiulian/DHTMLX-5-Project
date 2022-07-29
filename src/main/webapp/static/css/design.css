@@ -1,0 +1,29 @@
+html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            overflow: hidden;
+            background-color:white;
+}
+
+#timeTable {
+	width: 100%;
+    border-spacing: 0px;
+    text-align: center;
+}
+
+#timeTable tr, #timeTable tr td, th {
+	border: 1px solid;
+}
+
+#timeTable tr th {
+    background-color: #c0c0c0;
+}
+
+#timeTable tr td:hover {
+    background-color: green;
+    color: white;
+    transition: 0.3s;
+    
+}
+

@@ -1,0 +1,11 @@
+<tree id="0">
+
+    <item id="colleageName" text="ComputerScience" open="1">
+        <item id="1" text="Year 1" im0="folderClosed.gif"></item>
+        <item id="2" text="Year 2" im0="folderClosed.gif"></item>
+        <item id="3" text="Year 3" im0="folderClosed.gif"></item>
+        <item id="4" text="Year 4" im0="folderClosed.gif"></item>
+    </item>
+    
+    
+</tree>
