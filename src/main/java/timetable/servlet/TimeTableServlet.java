@@ -1,5 +1,7 @@
 package timetable.servlet;
 import java.io.IOException;
+
+import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -18,7 +20,7 @@ public class TimeTableServlet extends HttpServlet{
 		
 		RequestHelper.displayRequest(req);
 		
-		
+		 
 		
 		String year = req.getParameterNames().nextElement();
 		if(!year.equals("colleageName")) {

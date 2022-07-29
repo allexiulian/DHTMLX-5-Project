@@ -18,7 +18,15 @@ public class TimeTableDaoImpl implements TimeTableDao{
 	public List<TimeTable> findAllTimeTableByYear(int year) {
 		
 		
-		 String SQL = "SELECT * from public.\"TimeTable\" where study_year = ?";
+		 String SQL = "SELECT * from public.\"TimeTable\" where study_year = ? ORDER BY "
+				 +"CASE "
+				 	+ "WHEN day_name = 'Monday' THEN 1 "
+				 	+ "WHEN day_name = 'Tuesday' THEN 2 "
+				 	+ "WHEN day_name = 'Wednesday' THEN 3 "
+				 	+ "WHEN day_name = 'Thursday' THEN 4 "
+				 	+ "WHEN day_name = 'Friday' THEN 5 "
+             	 + "END ASC "
+                 + ", start_time;";
 		            
 		 List<TimeTable> list = new ArrayList<>();
 		

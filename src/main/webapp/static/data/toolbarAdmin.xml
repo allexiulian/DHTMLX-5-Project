@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<toolbar>
+   <item id="add" type="button" text="New College" img="add.png"/>
+   <item id="sep01" type="separator"/>   
+   <item id="timetablemanage" type="button" text="TimeTable Manage" img="timetablemanage.png"/>
+   <item id="sep02" type="separator"/>   
+    <item id="teachermanage" type="button" text="Teacher Manage" img="teachermanage.png"/>
+   <item id="logout" type="button" img="logout.png"/>
+        
+</toolbar>

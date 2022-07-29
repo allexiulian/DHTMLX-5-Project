@@ -6,13 +6,20 @@
   		<servlet-class>timetable.servlet.TimeTableServlet</servlet-class>
   </servlet>
   
+   <servlet>
+  		<servlet-name>adminservlet</servlet-name>
+  		<servlet-class>timetable.servlet.admin.AdminServlet</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
   		<servlet-name>timetable</servlet-name>
   		<url-pattern>/timetable</url-pattern>
   </servlet-mapping>
   
-  
-  
+   <servlet-mapping>
+  		<servlet-name>adminservlet</servlet-name>
+  		<url-pattern>/admin</url-pattern>
+  </servlet-mapping>
   
   
 </web-app>
