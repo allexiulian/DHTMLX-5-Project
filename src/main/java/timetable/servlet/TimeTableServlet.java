@@ -19,9 +19,6 @@ public class TimeTableServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		
 		RequestHelper.displayRequest(req);
-		
-		 
-		
 		String year = req.getParameterNames().nextElement();
 		if(!year.equals("colleageName")) {
 		res.getWriter().print(timeTableService.createTimeTable(Integer.parseInt(year)));

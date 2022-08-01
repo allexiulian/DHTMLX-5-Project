@@ -11,6 +11,14 @@
   		<servlet-class>timetable.servlet.admin.AdminServlet</servlet-class>
   </servlet>
   
+  <servlet>
+  		<servlet-name>loginservlet</servlet-name>
+  		<servlet-class>timetable.servlet.login.LoginServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
   <servlet-mapping>
   		<servlet-name>timetable</servlet-name>
   		<url-pattern>/timetable</url-pattern>
@@ -21,5 +29,9 @@
   		<url-pattern>/admin</url-pattern>
   </servlet-mapping>
   
+   <servlet-mapping>
+  		<servlet-name>loginservlet</servlet-name>
+  		<url-pattern>/login</url-pattern>
+  </servlet-mapping>
   
 </web-app>

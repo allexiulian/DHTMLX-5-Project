@@ -17,7 +17,7 @@ public class AdminServlet extends HttpServlet {
 	private final TimeTableService timeTableService = new TimeTableServiceImpl();
 	protected void doGet(HttpServletRequest  req, HttpServletResponse res) throws IOException, ServletException {
 
-RequestHelper.displayRequest(req);
+		RequestHelper.displayRequest(req);
 		
 		 
 	req.getRequestDispatcher("/WEB-INF/admin/admin.html").forward(req, res);

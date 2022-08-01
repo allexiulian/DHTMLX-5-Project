@@ -14,6 +14,8 @@ dhtmlxEvent(window, "load", function() {
 	toolbar.attachEvent("onXLE", function() {
 		toolbar.addSpacer("teachermanage");
 	});
+	
+	
 	generateTree();
 
 });

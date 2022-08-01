@@ -12,6 +12,20 @@ dhtmlxEvent(window, "load", function() {
 		toolbar.addSpacer("home");
 	});
 
-	generateTree();
+	
+	
+	toolbar.attachEvent("onclick", function(id) { 
+		if (id == "home") {
+			location.href = "/contact_manager/";
+		};
+	});
+	
+	toolbar.attachEvent("onclick", function(id) { 
+		if (id == "login") {
+			location.href = "login";
+		};
+	});
 
+	generateTree();
+	
 });
